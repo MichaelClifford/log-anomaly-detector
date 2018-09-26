@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 export LADT_MODEL_DIR="models" # Name of persistant storage directory that models will be saved to
 export LADT_ELASTICSEARCH_ENDPOINT='http://elasticsearch.perf.lab.eng.bos.redhat.com:9280' # address to Elasticsearch endpoint
 export LADT_MODEL='map.sav' # path to SOM map to update 

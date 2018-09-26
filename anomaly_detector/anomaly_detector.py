@@ -67,6 +67,7 @@ class AnomalyDetector():
 
         return data, raw
 
+    @property
     def train(self):
         """Train models for anomaly detection."""
         start = time.time()
@@ -208,7 +209,7 @@ class AnomalyDetector():
         while True:
             if self.update_model or self.update_w2v_model or self.recreate_models:
                 try:
-                    self.train()
+                    self.train
                 except Exception as ex:
                     _LOGGER.error("Training failed: %s" % ex)
                     raise
